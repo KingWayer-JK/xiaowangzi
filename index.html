@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我们的小王子</title>
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        h1 {
+            color: #b8860b;                 /* 暗金色 */
+            font-size: 36px;
+            margin: 0 0 20px 0;
+            letter-spacing: 6px;
+            text-align: center;
+            text-shadow: 0 2px 12px rgba(184,134,11,0.5);
+        }
+        .video-box {
+            width: 90%;
+            max-width: 900px;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>我们的小王子</h1>
+
+    <div class="video-box">
+        <video controls preload="metadata">
+            <source src="小王子.mp4" type="video/mp4">
+            您的浏览器不支持视频播放，请升级浏览器。
+        </video>
+    </div>
+</body>
+</html>
